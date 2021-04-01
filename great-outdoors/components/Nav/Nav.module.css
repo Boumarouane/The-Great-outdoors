@@ -1,9 +1,10 @@
 .container{
     background: transparent;
     width: 100%;
-    height: 100px;
-    position: fixed;
+    height: 160px;
+    position: absolute;
     z-index: 2;
+    padding: 40px 0;
 }
 
 .listeBox{
@@ -14,13 +15,34 @@
     align-items: center;
 }
 
+.listeBoxMobile{
+    display: none;
+
+}
+
 .liste{
     cursor: pointer;
-    font-size: 2.2rem;
+    font-size: 19px;
+    /* margin: 100px; */
 }
 
 .icon{
-    font-size: 4rem;
-    cursor: pointer;
-    
+    font-size: 0px;
+    cursor: pointer;   
+    /* margin: 0 90px; */
+}
+
+@media screen and (max-width: 600px){
+    .listeBox{
+        display: none;
+    }    
+    .listeBoxMobile{
+        display: block;
+        height: 10%;
+        padding: 0 30px;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }    
 }

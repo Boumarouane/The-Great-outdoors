@@ -2,9 +2,114 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 62.5%;
+    /* font-size: 62.5%; */
+}
+html{
+    background: #000;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
 }
 
 li{
     color: #fff;
 }
+.blockTextExplore{
+    position: relative;
+    color: #fff;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 40px;
+    padding: 5px;
+}
+
+.blockTextExplore:after{
+    content: '';
+    position: absolute;
+    z-index: 1;
+    height: 100px;
+    right: 0;
+    top: -20%;
+    left: 0;
+    -webkit-filter: blur(15px);
+    filter: blur(15px);
+    background-color: #000;
+    background-size: cover;
+}
+.centerBlockText{
+    width: 590px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 30px;
+    font-size: 20px;
+}
+ h2{
+     font-size: 35px;
+     margin: 80px 0 30px 0;
+ }
+
+ .containerExplore{
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+ }
+
+ .containerJournal{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+ }
+ .blockTextJournal{
+     position: relative;
+    color: #fff;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 90px;
+    text-align: center;
+    padding: 5px;
+ }
+
+@media screen and (max-width: 1260px){
+    .containerJournal{
+        flex-direction: column;
+     }    
+}
+
+@media screen and (max-width: 900px){
+    .containerExplore{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 600px){
+    h2{
+        font-size: 30px;
+        margin: 60px 0 20px 0;
+    }
+    .blockTextExplore{
+        height: 250px;
+        margin-bottom: 10px;
+    }
+    .blockTextJournal{
+       margin-bottom: 30px;
+    }   
+    .centerBlockText{
+        width: 590px;
+        line-height: 22px;
+        font-size: 16px;
+        text-align: center;
+    }
+    
+    
+}
+

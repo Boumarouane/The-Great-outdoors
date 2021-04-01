@@ -1,10 +1,118 @@
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
 .containerBlack{
     width: 100%;
     height: 100%;
-    background: radial-gradient(ellipse at center, transparent 0, rgba(0, 0, 0, .7) 80%);
+    background: radial-gradient(ellipse at center, transparent 0, rgba(0, 0, 0, .85) 60%, rgba(0, 0, 0, .92) 68%);
     position: absolute;
-    left:"50%";
-    top:"50%";
-    transform: "translate(-50%, -50%)";
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
     z-index: 1;
+}
+
+.title{
+    position: absolute;
+    left:50%;
+    top:45%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    font-size: 130px;
+    color:#fff;
+    white-space:nowrap;
+    text-shadow: #000 1px 0 10px;
+}
+.subtitle{
+    position: absolute;
+    left:50%;
+    top:58%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    font-size: 30px;
+    color:#fff;
+    white-space:nowrap;
+    text-shadow: #000 1px 0 10px;
+}
+.arrayBottom{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    position: absolute;
+    left:50%;
+    top:80%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    padding: 20px;
+    line-height: 20px;
+    cursor: pointer;
+    /* transition: all 1s ease-in-out; */
+    animation: bottom 5s linear 10s infinite both;
+}
+
+@keyframes bottom {
+    0%{
+        line-height: 20px;
+    }
+    50%{
+        line-height: 80px;
+    }
+    100%{
+        line-height: 20px;
+    }
+}
+
+/* MEDIA MAX 1260 */
+@media screen and (max-width: 1260px){
+    .title{
+        font-size: 100px;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .title{
+        font-size: 65px;
+    }
+    .subtitle{
+        font-size: 25px;
+        top:54%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .title{
+        font-size: 40px;
+    }
+    .subtitle{
+        font-size: 20px;
+        top:50%;
+    }
+    .arrayBottom{
+        width: 60px;
+        height: 60px;
+        top:70%;
+    }    
+    @keyframes bottom {
+        0%{
+            line-height: 20px;
+        }
+        50%{
+            line-height: 50px;
+        }
+        100%{
+            line-height: 20px;
+        }
+    }    
+}
+
+@media screen and (max-width: 350px){
+    .title{
+        font-size: 30px;
+    }
+    .subtitle{
+        font-size: 16px;
+    }
 }
