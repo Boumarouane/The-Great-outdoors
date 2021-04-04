@@ -19,7 +19,7 @@ export default function Explore() {
                 <ExploreBox linkImage="/multimedia/antelope-canyon.jpeg" title="Antelope Canyon" subtitle="UNITED STATES" altImage="Antelope canyon"/>
                 <ExploreBox linkImage="/multimedia/grossglockner.jpeg" title="Grossglockner" subtitle="AUSTRA" altImage="Grossglockner"/>
                 </div>
-              </div>
+              </div>  
             </article>
         </Layout>
       </>
