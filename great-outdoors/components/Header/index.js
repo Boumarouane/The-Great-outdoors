@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import PowerSlap from "../../public/multimedia/homevideo.mp4";
+import VideoHeader from "../../public/multimedia/homevideo.mp4";
 import styles from "./Header.module.css";
 import Image from "next/image";
 
@@ -36,7 +36,7 @@ export default function Header() {
           transform: "translate(-50%, -50%)",
           zIndex:"-1"
       }}>
-        <source src={PowerSlap} type="video/mp4" />
+        <source src={VideoHeader} type="video/mp4" />
       </video>
     </div>
     </>

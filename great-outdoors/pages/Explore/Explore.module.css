@@ -1,0 +1,13 @@
+.containerMain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.container{
+    margin-top: 200px;
+    padding: 50px;
+    width: 90%;
+    line-height: 22px;
+}

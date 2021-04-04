@@ -29,7 +29,7 @@ li{
     padding: 5px;
 }
 
-.blockTextExplore:after{
+/* .blockTextExplore:after{
     content: '';
     position: absolute;
     z-index: 1;
@@ -41,7 +41,7 @@ li{
     filter: blur(15px);
     background-color: #000;
     background-size: cover;
-}
+} */
 .centerBlockText{
     width: 590px;
     display: flex;

@@ -2,11 +2,15 @@ import ExploreBox from "../components/ExploreBox";
 import JournalBox from "../components/JournalBox";
 import Layout from "../components/Layout";
 import More from "../components/More";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import Video from "../public/multimedia/homevideo.mp4"
+
 
 export default function Home() {
   return (
     <div>
-      <Layout>
+      <Layout page="Accueil" header={<Header/>} footer={<Footer/>}>
         <div className="blockTextExplore">
           <section className="centerBlockText">
             <h2>Explore the World</h2>
@@ -18,7 +22,7 @@ export default function Home() {
           <ExploreBox linkImage="/multimedia/antelope-canyon.jpeg" title="Antelope Canyon" subtitle="UNITED STATES" altImage="Antelope canyon"/>
           <ExploreBox linkImage="/multimedia/grossglockner.jpeg" title="Grossglockner" subtitle="AUSTRA" altImage="Grossglockner"/>
         </div>
-        <More textLink="SEE MORE" link="/About" />
+        <More textLink="SEE MORE" link="/Explore" />
         <div className="blockTextJournal">
           <section className="centerBlockText">
               <h2>The Journal</h2>
